@@ -1,5 +1,5 @@
 pandas
 numpy
 openpyxl
-ploty
+plotly
 streamlit>=1.40.0
