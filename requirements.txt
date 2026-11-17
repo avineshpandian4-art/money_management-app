@@ -2,4 +2,4 @@ pandas
 numpy
 openpyxl
 ploty
-streamlit
+streamlit>=1.40.0
