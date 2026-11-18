@@ -93,7 +93,8 @@ def main():
       update_excel(update,file_path,sheet_n)
       tab=pd.read_excel(file_path)
       total_saving=tab["SAVINGS"].sum()
-   clean_excel(file_path,sheet_n)
+      clean_excel(file_path,sheet_n)
+      st.rerun()
    show(tab)
           
           
@@ -106,7 +107,9 @@ def main():
    except Exception as e:
       total_saving,delt=0,0
    with st.container(horizontal=True):
-      if st.button("DELETE ENTRY"):dele_last_entry(file_path,sheet_n)
+      if st.button("DELETE ENTRY"):
+             dele_last_entry(file_path,sheet_n)
+             st.rerun()
       st.space("xxlarge")
       st.space("xxlarge")
       st.space("xxlarge")
